@@ -19,4 +19,4 @@ O foco do projeto é o aprendizado e a consolidação dos fundamentos de front-e
 
 ## 🌐 Acesso ao Projeto
 🔗 Link do site (GitHub Pages):  
-https://lucaslinsrl.github.io/Pousada-Paradiso/
+https://lucaslinsrl.github.io/luxurycar/
