@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Contatos - Luxury Cars</title>
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+<header>
+  <nav>
+    <ul class="menu">
+      <li><a href="index.html">HOME</a></li>
+      <li><a href="modelos.html">MODELOS</a></li>
+      <li><a href="sobre.html">SOBRE</a></li>
+      <li><a href="contatos.html" class="active">CONTATOS</a></li>
+    </ul>
+  </nav>
+</header>
+
+<main>
+  <h1 class="title">CONTATOS</h1>
+
+  <section class="contact">
+    <div class="contact-container">
+
+      <div class="contact-info">
+        <h2>Fale Conosco</h2>
+        <p>
+          Tem alguma dúvida, sugestão ou gostaria de colaborar com o projeto?
+          Entre em contato conosco! Adoramos trocar ideias com pessoas que compartilham
+          da mesma paixão por carros de luxo.
+        </p>
+        <br>
+        <ul>
+          <li><strong>Email:</strong> contato@luxurycars.com.br</li>
+          <li><strong>Telefone:</strong> (11) 99999-9999</li>
+          <li><strong>Endereço:</strong> Avenida dos Automóveis, 1000 – São Paulo, SP</li>
+        </ul>
+        <br>
+        <p>Acompanhe também nossas redes sociais:</p>
+        <div class="social-links fade-in">
+          <a href="#"><img src="img/Instagram_icon.png" alt="Instagram"></a>
+          <a href="#"><img src="img/Facebook_logo.png" alt="Facebook"></a>
+          <a href="#"><img src="img/X-icon.png" alt="Twitter / X"></a>
+        </div>
+      </div>
+
+      <div class="contact-form">
+        <h2>Envie uma mensagem</h2>
+        <form id="formContato">
+          <input type="text" name="nome" placeholder="Seu nome" required>
+          <input type="email" name="email" placeholder="Seu email" required>
+          <textarea name="mensagem" rows="5" placeholder="Digite sua mensagem..." required></textarea>
+          <button type="submit" class="btn">Enviar</button>
+          <p id="mensagemSucesso" class="mensagem-sucesso"></p>
+        </form>
+      </div>
+
+    </div>
+  </section>
+</main>
+
+<button id="btnTopo" title="Voltar ao topo">↑</button>
+
+<script src="script.js"></script>
+<script>
+  const form = document.getElementById('formContato');
+  const msg = document.getElementById('mensagemSucesso');
+
+  form.addEventListener('submit', (e) => {
+    e.preventDefault();
+    msg.textContent = "Mensagem enviada com sucesso! ✅";
+    msg.style.display = "block";
+    form.reset();
+
+    setTimeout(() => {
+      msg.style.display = "none";
+    }, 4000);
+  });
+</script>
+
+
+<footer>
+  <p>© 2025 Luxury Cars. Todos os direitos reservados.</p>
+</footer>
+
+</body>
+</html>
