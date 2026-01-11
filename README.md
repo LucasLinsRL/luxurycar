@@ -16,3 +16,7 @@ O foco do projeto é o aprendizado e a consolidação dos fundamentos de front-e
 - CSS3
 - JavaScript
 - Photopea (edição de imagens e criação de assets visuais)
+
+## 🌐 Acesso ao Projeto
+🔗 Link do site (GitHub Pages):  
+https://lucaslinsrl.github.io/Pousada-Paradiso/
